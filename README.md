@@ -26,5 +26,11 @@ print 'hello world'
 
 # output '123four five six789':
 print '123four five six789'
+
+# output '123'
+print 123
+
+# output '!!!'
+print !!!
 ```
 
