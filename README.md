@@ -17,6 +17,8 @@ sudo cp print /usr/local/bin
 
 ## example usage
 
+alnum characters do not need to be wrapped with single quotes. strings containing special characters may break parsing. it is therefore recommended to wrap them in single quotes `' '`
+
 ```bash
 # output 'hello':
 print hello
@@ -31,6 +33,6 @@ print '123four five six789'
 print 123
 
 # output '!!!'
-print !!!
+print '!!!'
 ```
 
