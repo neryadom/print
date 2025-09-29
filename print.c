@@ -18,6 +18,7 @@ char *string_printer(const char *input_string){
 int main(int argc, char *argv[]){
 	if (argc > 2){
 		printf("Error - program takes only one positional argument\n");
+		printf("Fix   - wrap strings in single quotes -> 'hello world'\n");
 		return 1;
 	}
 	char *output = string_printer(argv[1]);
