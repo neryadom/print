@@ -32,6 +32,9 @@ print '123four five six789'
 # output '123'
 print 123
 
+# output ' '
+print  
+
 # output '!!!'
 print '!!!'
 ```
