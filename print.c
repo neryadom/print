@@ -20,9 +20,16 @@ int main(int argc, char *argv[]){
 		printf("Error - program takes only one positional argument\n");
 		printf("Fix   - wrap strings in single quotes -> 'hello world'\n");
 		return 1;
+	} else if (argc <= 1){
+		char empty[] = {" "};
+		char *output = string_printer(empty);
+		printf("%s\n", output);
+		free(output);
+
+	} else {
+		char *output = string_printer(argv[1]);
+		printf("%s\n", output);
+		free(output);
 	}
-	char *output = string_printer(argv[1]);
-	printf("%s\n", output);
-	free(output);
 	return 0;
 }
