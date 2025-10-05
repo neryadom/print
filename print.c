@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
+char *string_printer(const char *input_string);
 
 char *string_printer(const char *input_string){
 	if (input_string ==NULL){
@@ -21,11 +22,10 @@ int main(int argc, char *argv[]){
 		printf("Fix   - wrap strings in single quotes -> 'hello world'\n");
 		return 1;
 	} else if (argc <= 1){
-		char empty[] = {" "};
+		const char empty[] = {" "};
 		char *output = string_printer(empty);
 		printf("%s\n", output);
 		free(output);
-
 	} else {
 		char *output = string_printer(argv[1]);
 		printf("%s\n", output);
